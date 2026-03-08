@@ -50,6 +50,7 @@ header {
 nav ul li a {
   color: #ffffff;
   transition: 0.3s;
+
 }
 
 nav ul li a:hover {
@@ -244,7 +245,7 @@ button:hover {
 
 .parceiros {
   background-color: rgb(36, 36, 36);
-    width: min(850px, 92vw);
+  width: min(850px, 92vw);
   min-height: 200px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -352,6 +353,18 @@ footer img {
   .nav-list {
     gap: 2px;
     font-size: 5px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    padding: 6px 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
   }
 
   .card {
