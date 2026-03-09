@@ -899,7 +899,7 @@ text-align: center;
 
   .container-equipe-geral {
     grid-template-columns: 1fr; /* 1 card por linha */
-    min-width: 350px;
+    width: min(350px, 92vw);
   }
 
 
