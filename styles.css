@@ -700,88 +700,6 @@ html {
   color: #8a8a8a;
 }
 
-/*############################################################### MEDIA MOBILE ###############################################################*/
-/*############################################################### MEDIA MOBILE ###############################################################*/
-/*############################################################### MEDIA MOBILE ###############################################################*/
-/*############################################################### MEDIA MOBILE ###############################################################*/
-
-@media (max-width: 768px) {
-
-  h1,
-  .content h2 {
-    font-size: 26px;
-  }
-
-  .btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10px;
-
-  }
-
-  .servicos li {
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    margin: 12px 0;
-    color: #ffffff;
-    font-weight: 12px;
-    font-size: 16px;
-  }
-
-  .servicos h1 {
-    font-size: 18px;
-    color: #0088ff;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .servicos h2 {
-    font-size: 18px;
-    color: #0088ff;
-    text-align: center;
-    margin: 40px 0 20px 0;
-  }
-
-  .nav-list {
-    gap: 2px;
-    font-size: 5px;
-  }
-
-  .nav-list a {
-    text-decoration: none;
-    font-size: 10px;
-    color: white;
-    padding: 6px 2px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-weight: bold;
-  }
-
-  .card {
-    width: min(320px, 92vw);
-    padding: 20px;
-  }
-
-  .footer-grid {
-    gap: 10px;
-  }
-
-  .footer-grid div {
-    min-width: auto;
-    width: 100%;
-    align-items: center;
-  }
-
-  .content p {
-    text-align: center;
-  }
-}
-
 /*############################################################### SCROLLBAR ###############################################################*/
 /*############################################################### SCROLLBAR ###############################################################*/
 /*############################################################### SCROLLBAR ###############################################################*/
@@ -802,7 +720,6 @@ html {
   border-radius: 4px;
 }
 
-/* Cor do "elevador" ao passar o mouse */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #024b79;
 }
@@ -899,26 +816,50 @@ html {
   background-color: #2b2b2b;
   align-items: center;
   text-align: center;
-  max-width: 650px;
+  max-width: 350px;
   border-radius: 30px;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
+}
+
+.container-equipe:hover {
+  box-shadow: 0 8px 16px #009BFE;
+  transition: 0.3s;
+}
+
+.container-equipe-geral {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .fotoequipe {
-  width: 500px !important;
-  height: 500px !important;
+  width: 250px !important;
+  height: 250px !important;
   border-radius: 50%;
   object-fit: cover;
   align-items: center;
+  background-color: #f3f3f3;
 
 }
 
+.texto h1{
+margin-top: 50px;
+margin-bottom: 5px;
+
+}
+
+.texto p{
+margin-bottom: 50px;
+
+}
 .container-equipe h2 {
-  font-size: 28px;
+  font-size: 20px;
   color: rgb(0, 136, 255);
   text-align: center;
   margin-top: 20px;
@@ -927,9 +868,96 @@ html {
 }
 
 .container-equipe h3 {
-  font-size: 16px;
+  font-size: 12px;
   color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 2px;
 
+}
+
+/*############################################################### MEDIA MOBILE ###############################################################*/
+/*############################################################### MEDIA MOBILE ###############################################################*/
+/*############################################################### MEDIA MOBILE ###############################################################*/
+/*############################################################### MEDIA MOBILE ###############################################################*/
+
+@media (max-width: 768px) {
+
+  h1,
+  .content h2 {
+    font-size: 26px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+
+  }
+
+  .container-equipe-geral {
+    grid-template-columns: 1fr; /* 1 card por linha */
+  }
+
+
+  .servicos li {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 12px 0;
+    color: #ffffff;
+    font-weight: 12px;
+    font-size: 16px;
+  }
+
+  .servicos h1 {
+    font-size: 18px;
+    color: #0088ff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .servicos h2 {
+    font-size: 18px;
+    color: #0088ff;
+    text-align: center;
+    margin: 40px 0 20px 0;
+  }
+
+  .nav-list {
+    gap: 2px;
+    font-size: 5px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    padding: 6px 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+  }
+
+  .card {
+    width: min(320px, 92vw);
+    padding: 20px;
+  }
+
+  .footer-grid {
+    gap: 10px;
+  }
+
+  .footer-grid div {
+    min-width: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .content p {
+    text-align: center;
+  }
 }
