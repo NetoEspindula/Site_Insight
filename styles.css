@@ -691,22 +691,21 @@ padding: 10px;
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  font-size: 18px;
   margin: 12px 0;
   color: #ffffff;
   font-weight: 12px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .servicos h1 {
-  font-size: 25px;
+  font-size: 18px;
   color: #0088ff;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .servicos h2 {
-  font-size: 25px;
+  font-size: 18px;
   color: #0088ff;
   text-align: center;
   margin: 40px 0 20px 0;
