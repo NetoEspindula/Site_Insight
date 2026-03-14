@@ -909,12 +909,11 @@ html {
     font-size: 26px;
   }
 
-  .dropdown-menu {
-    left: auto;
-    right: 0;
-    width: 90vw;
-    max-width: 260px;
-  }
+.dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 
   .btn {
