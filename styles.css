@@ -910,10 +910,11 @@ html {
   }
 
   .dropdown-menu {
-    position: static;
-    width: 100%;
-    min-width: 100%;
-    border-radius: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    max-width: 90vw;
   }
 
 
@@ -958,8 +959,8 @@ html {
   }
 
   .nav-list {
-    gap: 2px;
-    font-size: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-list a {
