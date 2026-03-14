@@ -11,21 +11,65 @@
 
 <body>
     <header>
+
         <a href="index.html">
             <img src="imagens/logo.png" class="logo" alt="Logo Insight">
         </a>
 
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="index.html"><img src="imagens/inicio.png" class="nav-icon" alt="">INÍCIO</a></li>
-                <li><a href="sobre.html"><img src="imagens/sobre.png" class="nav-icon" alt="">SOBRE</a></li>
-                <li><a href="servicos.html"><img src="imagens/serviços.png" class="nav-icon" alt="">SERVIÇOS</a></li>
-                <li><a href="contato.html"><img src="imagens/contato.png" class="nav-icon" alt="">CONTATO</a></li>
+
+                <li>
+                    <a href="index.html">
+                        <img src="imagens/inicio.png" class="nav-icon">
+                        INÍCIO
+                    </a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="sobre.html">
+                        <img src="imagens/sobre.png" class="nav-icon">
+                        SOBRE
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="sobre.html">NOSSA EMPRESA</a></li>
+                        <li><a href="equipe.html">NOSSA EQUIPE</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">
+                        <img src="imagens/serviços.png" class="nav-icon">
+                        SERVIÇOS
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="servicos.html#servicosoftware">DESENVOLVIMENTO DE SOFTWARE</a></li>
+                        <li><a href="servicos.html#servicoprocesso">ESTRUTURAÇÃO DE PROCESSOS</a></li>
+                        <li><a href="servicos.html#servicoecommerce">SERVIÇOS DE E-COMMERCE</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="contato.html">
+                        <img src="imagens/contato.png" class="nav-icon">
+                        CONTATO
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="contato.html#whatsappid">ENTRE EM CONTATO</a></li>
+                        <li><a href="contato.html#contatoid">ENTRAMOS EM CONTATO</a></li>
+                    </ul>
+                </li>
+
             </ul>
         </nav>
+
     </header>
 
-    <main class="content">
+
+    <main class="content" id="whatsappid">
         <h2>ENTRE EM CONTATO CONOSCO</h2>
 
         <section class="container-contato">
@@ -34,7 +78,7 @@
                 <img src="imagens/whatsapp.png" class="imgcontent" alt="">
                 <p>+55 47 9 8457-9711</p>
                 <a href="https://wa.me/47984579711" target="_blank">
-                    <button>Entrar em Contato</button>
+                    <button>ENTRAR EM CONTATO</button>
                 </a>
             </div>
 
@@ -43,7 +87,7 @@
                 <img src="imagens/instagram.png" class="imgcontent" alt="">
                 <p>@Insight_tec.oficial</p>
                 <a href="https://www.instagram.com/insight_tec.oficial/" target="_blank">
-                    <button>Entrar em Contato</button>
+                    <button>ENTRAR EM CONTATO</button>
                 </a>
             </div>
 
@@ -52,13 +96,13 @@
                 <img src="imagens/facebook.png" class="imgcontent" alt="">
                 <p>Insight Tecnologia</p>
                 <a href="https://www.instagram.com/insight_tec.oficial/" target="_blank">
-                    <button>Entrar em Contato</button>
+                    <button>ENTRAR EM CONTATO</button>
                 </a>
             </div>
         </section>
 
         <h1>DEIXE SEUS DADOS PARA CONTATO</h1>
-        <section class="entramos-contato">
+        <section class="entramos-contato" id="contatoid">
             <form>
                 <label for="fname">Nome e Sobrenome:</label>
                 <input type="text" id="fname" name="fname">
@@ -68,7 +112,7 @@
                 <input type="text" id="email" name="email"><br>
                 <label for="motivo">Motivo do Contato:</label>
                 <input type="text" id="motivo" name="motivo"> <br>
-                <button type="submit" class="btn-enviar">Enviar</button>
+                <button type="submit" class="btn-enviar">ENVIAR</button>
             </form>
 
 
